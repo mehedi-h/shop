@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main>
+        <section>
+            <div class="py-16 flex flex-row gap-x-5 px-10">
+                <div class="card flex-1 w-56 bg-base-100 shadow-xl">
+                    <figure><img src="/images/photo-1.jpg" alt="flowers" class="h-72 w-56"/></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Yellow Flower</h2>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, labore?</p>
+                        <h1>Price: 35 $</h1>
+                        <button onclick="handleClickBtn(this)" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card flex-1 w-56 bg-base-100 shadow-xl">
+                    <figure><img src="/images/photo-2.jpg" alt="flowers" class="h-72 w-56"/></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Purple Flower</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quam.</p>
+                        <h1>Price: 60 $</h1>
+                        <button onclick="handleClickBtn(this)" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card flex-1 w-56 bg-base-100 shadow-xl">
+                    <figure><img src="/images/photo-3.jpg" alt="flowers" class="h-72 w-56"/></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pink Flower</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempora.</p>
+                        <h1>Price: 50 $</h1>
+                        <button onclick="handleClickBtn(this)" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card flex-1 items-center pt-20 w-56 bg-base-100 shadow-xl">
+                    <div class="selected-flowers" id="selected-flowers">
+                        
+                    </div>
+                    <h1 class="text-xl font-semibold">Total Price: <span id="total-price">00</span></h1>
+                    <h1 class="text-xl font-semibold">Discount <span class="text-2xl font-bold">30%</span></h1>
+                    <hr>
+                    <h1 class="text-xl font-semibold">Net Price: <span id="net-price">00</span></h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
