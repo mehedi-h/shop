@@ -25,8 +25,8 @@ function handleClickBtn(target) {
     const netPriceAmount = parseInt(netPrice);
     console.log(netPriceAmount)
     
-    const discountRate = totalAmount/100*30;
-    const netAmount = totalAmount-discountRate;
+    const discountRate = (total*30)/100;
+    const netAmount = total-discountRate;
     if (discountRate.length >= 1) {
         netAmount += 1;
     }
